@@ -1,7 +1,7 @@
 {
   "name": "Lime",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/lime.js",
   "repository": "https://github.com/1-EXON/Lime",
   "author": "시혁 박 <exon.indiv@gmail.com>",
   "license": "MIT",

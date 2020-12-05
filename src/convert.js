@@ -11,5 +11,14 @@ function aspirated2simple(consonant) {
     return consonant
 }
 
+function removeJosa(str) {
+    let josa = ['을', '를', '이가', '이', '가']
+    josa.forEach((i) => {
+        str.replace(i, '')
+    })
+    return str
+}
+
 module.exports.enter2space = enter2space
 module.exports.aspirated2simple = aspirated2simple
+module.exports.removeJosa = removeJosa
