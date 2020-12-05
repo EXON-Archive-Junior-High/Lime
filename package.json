@@ -6,6 +6,7 @@
   "author": "시혁 박 <exon.indiv@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
     "hangul-js": "^0.2.6"
   },
   "devDependencies": {
