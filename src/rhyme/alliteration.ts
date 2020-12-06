@@ -4,7 +4,7 @@ import { enter2space, aspirated2simple } from '../convert'
 
 export function alliteration() {
     const str = enter2space(`아냐 흘러가는 것은 흘러가는 대로 현재의 우리의 멋있는 모습`)
-    console.log(chalk.blue(str))
+    console.log(chalk.green(str))
     let charArr = str.split('')
     let firstChar: [[string, number]] = [['', 0]]
     let j = 0

@@ -4,7 +4,7 @@ import { enter2space, removeJosa } from '../convert'
 
 export function consonant() {
     const str: string = enter2space(removeJosa('사과를 사고 생각'))
-    console.log(chalk.blue(str))
+    console.log(chalk.green(str))
     const words: string[] = str.split(' ')
     const disassembleWords: string[][][] = []
     const initial: string[] = []
@@ -16,4 +16,3 @@ export function consonant() {
     console.log(initial)
     
 }
-
