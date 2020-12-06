@@ -1,2 +1,2 @@
 # Lime
-🍋 Similar Lime Check Library
+🍋 Similar Rhyme Check Library
