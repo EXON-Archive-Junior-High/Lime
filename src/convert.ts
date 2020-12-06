@@ -13,9 +13,10 @@ export function aspirated2simple(consonant: string) {
 
 export function removeJosa(str: string) {
     const josa = ['을', '를', '이가', '이', '가']
+    let newStr: string = str
     josa.forEach((i) => {
-        str.replace(i, '')
+        newStr = newStr.replace(i, '')
     })
-    return str
+    return newStr
 }
 
