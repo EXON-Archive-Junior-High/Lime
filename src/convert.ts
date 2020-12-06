@@ -1,8 +1,8 @@
-function enter2space(str) {
+export function enter2space(str: string) {
     return str.replace('\n', ' ').replace('    ', '')
 }
 
-function aspirated2simple(consonant) {
+export function aspirated2simple(consonant: string) {
     if (consonant == 'ㄲ' || consonant == 'ㅋ') return 'ㄱ'
     else if (consonant == 'ㄸ' || consonant == 'ㅌ') return 'ㄷ'
     else if (consonant == 'ㅃ' || consonant == 'ㅍ') return 'ㅂ'
@@ -11,14 +11,11 @@ function aspirated2simple(consonant) {
     return consonant
 }
 
-function removeJosa(str) {
-    let josa = ['을', '를', '이가', '이', '가']
+export function removeJosa(str: string) {
+    const josa = ['을', '를', '이가', '이', '가']
     josa.forEach((i) => {
         str.replace(i, '')
     })
     return str
 }
 
-module.exports.enter2space = enter2space
-module.exports.aspirated2simple = aspirated2simple
-module.exports.removeJosa = removeJosa

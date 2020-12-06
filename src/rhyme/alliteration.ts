@@ -1,13 +1,13 @@
-const hangul = require('hangul-js')
-const chalk = require('chalk')
-const { enter2space, aspirated2simple } = require('../convert')
+import hangul from 'hangul-js'
+import chalk from 'chalk'
+import { enter2space, aspirated2simple } from '../convert'
 
-function alliteration() {
+export function alliteration() {
     const str = enter2space(`아냐 흘러가는 것은 흘러가는 대로 현재의 우리의 멋있는 모습`)
     console.log(chalk.red(str))
     let charArr = str.split('')
     console.log(charArr)
-    const firstChar = []
+    let firstChar: [[string, number]] = [['', 0]]
     let j = 0
     for (let i = 0; i < charArr.length; i++) {
         if (charArr[i] === ' ') {
@@ -24,5 +24,3 @@ function alliteration() {
     
     console.log(charArr.join(''))
 }
-
-module.exports.alliteration = alliteration
