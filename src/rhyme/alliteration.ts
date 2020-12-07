@@ -2,11 +2,11 @@ import hangul from 'hangul-js'
 import chalk from 'chalk'
 import { enter2space, aspirated2simple } from '../convert'
 
-export function alliteration() {
+export function alliteration(): void {
     const str = enter2space(`아냐 흘러가는 것은 흘러가는 대로 현재의 우리의 멋있는 모습`)
     console.log(chalk.green(str))
-    let charArr = str.split('')
-    let firstChar: [[string, number]] = [['', 0]]
+    const charArr = str.split('')
+    const firstChar: [[string, number]] = [['', 0]]
     let j = 0
     for (let i = 0; i < charArr.length; i++) {
         if (charArr[i] === ' ') {
