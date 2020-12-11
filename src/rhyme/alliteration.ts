@@ -18,6 +18,10 @@ export function alliteration(): void {
         }
     }
     for (let i = 0; i < firstChar.length; i++) charArr[firstChar[i][1]] = chalk.blue('[' + charArr[firstChar[i][1]] + ']')
-    
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    const counts: any = { }
+    firstChar.forEach((x) => counts[x[0]] = (counts[x[0]] || 0) + 1)
+    console.log(firstChar)
+    console.log(counts)
     console.log(charArr.join(''))
 }
