@@ -7,10 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
+    "fs": "^0.0.1-security",
     "hangul-js": "^0.2.6",
     "typescript": "^4.1.2"
   },
   "devDependencies": {
+    "@types/node": "^15.12.4",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0"
